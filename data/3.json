@@ -1,0 +1,16 @@
+{
+  "questionId": 3,
+  "question_text": "3. ng-click directive represents a AngularJS click event.",
+  "options": [
+    {
+      "option": "A",
+      "text": "a. true",
+      "correct": true
+    },
+    {
+      "option": "B",
+      "text": "b. false",
+      "correct": false
+    }
+  ]
+}

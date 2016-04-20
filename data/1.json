@@ -1,0 +1,21 @@
+{
+  "questionId": 1,
+  "question_text": "1. Which of the following is true about ng-bind directive?",
+  "options": [
+    {
+      "option": "A",
+      "text": "a. ng-bind directive binds the AngularJS Application data to HTML tags.",
+      "correct": false
+    },
+    {
+      "option": "B",
+      "text": "b. ng-bind updates html control data when controller changes the model.",
+      "correct": false
+    },
+    {
+      "option": "C",
+      "text": "c. Both A and B.",
+      "correct": true
+    }
+  ]
+}

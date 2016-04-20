@@ -1,0 +1,26 @@
+{
+  "questionId": 2,
+  "question_text": "2. Which of the following is true about $routeProvider?",
+  "options": [
+    {
+      "option": "A",
+      "text": "a. $routeProvider is the key service which set the configuration of urls.",
+      "correct": false
+    },
+    {
+      "option": "B",
+      "text": "b. $routeProvider maps Urls with the corresponding html page or ng-template.",
+      "correct": false
+    },
+    {
+      "option": "C",
+      "text": "c. $routeProvider attaches a controller with the view.",
+      "correct": true
+    },
+    {
+      "option": "D",
+      "text": "d. All of the above.",
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<div class="question-container" ng-model="isAnswered" ng-animate=" 'animate' ">
+    <h2>The Angular Quiz</h2>
+    <quiz-question ng-hide="isResults" ng-animate=" 'animate' ">
+        <h4 class="quiz-question">{{question.question_text}}</h4>
+        <ul>
+            <li quiz-question class="option-{{isSelected(question.questionId, option)}}" ng-click="addAnswer(question.questionId, option) " ng-repeat="option in question.options">
+                <input type="checkbox" class="mycheckbox"><label>{{option.text}}</label>
+            </li>
+        </ul>
+    </quiz-question>
+    <div ui-view class="question-content"></div>
+    <div class="buttons-content" ng-hide="isResults">
+        <button ng-show="questionId < 5 && isAnswered" class="btn btn-primary next" ng-click="getNextQuestion()">Next</button>
+        <button ng-show="questionId < 5 && !isAnswered" ng-disabled="!isAnswered" class="btn btn-primary next">Next</button>
+        <button ng-show="questionId == 5" ng-disabled="!isAnswered" class="btn btn-primary next"><a ui-sref="quiz.results">Results</a></button>
+        <div class="question-counter">{{questionId}} / {{numQuestions}}</div>
+    </div>
+    <div class="buttons" ng-show="isResults">
+        <button class="btn btn-primary"><a ui-sref="home" class="next">Start Over</a></button>
+    </div>
+    <div id="progressbar" ng-hide="isResults"></div>
+</div>
+
