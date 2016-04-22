@@ -15,8 +15,8 @@
         <button ng-show="questionId == 5" ng-disabled="!isAnswered" class="btn btn-primary next"><a ui-sref="quiz.results">Results</a></button>
         <div class="question-counter">{{questionId}} / {{numQuestions}}</div>
     </div>
-    <div class="buttons" ng-show="isResults">
-        <button class="btn btn-primary"><a ui-sref="home" class="next">Start Over</a></button>
+    <div class="buttons-content" ng-show="isResults">
+        <button class="btn btn-primary next"><a ui-sref="home">Start Over</a></button>
     </div>
     <div id="progressbar" ng-hide="isResults"></div>
 </div>
